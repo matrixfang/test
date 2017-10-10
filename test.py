@@ -13,17 +13,17 @@ import matplotlib.pyplot as plt
 # print(np.random.rand(2,3))
 
 
-class mydic(dict):
-    def __init__(self, *args):
-        dict.__init__(self, *args)
-        self.name = 'mydic'
-    def to_print(self):
-        print(self)
-
-    def __add__(self,other):
-        if set(self.keys()) != set(other.keys()):
-            raise Exception("index of vlabels is not the same")
-        return mydic({node: self[node]+ other[node] for node in self})
+# class mydic(dict):
+#     def __init__(self, *args):
+#         dict.__init__(self, *args)
+#         self.name = 'mydic'
+#     def to_print(self):
+#         print(self)
+#
+#     def __add__(self,other):
+#         if set(self.keys()) != set(other.keys()):
+#             raise Exception("index of vlabels is not the same")
+#         return mydic({node: self[node] + other[node] for node in self})
 
 
 def plot_test():
@@ -39,7 +39,5 @@ def plot_test():
     plt.plot(x, y2, color='g', label='gradient')
     plt.legend(loc='upper right')
     plt.savefig('test.png')
-    plt.show()
 
 plot_test()
-x=[1,2,3,4]
