@@ -23,7 +23,7 @@ class mydic(dict):
     def __add__(self,other):
         if set(self.keys()) != set(other.keys()):
             raise Exception("index of vlabels is not the same")
-        return mydic({node:self[node]+other[node] for node in self})
+        return mydic({node: self[node]+ other[node] for node in self})
 
 
 def plot_test():
