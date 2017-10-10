@@ -1,6 +1,6 @@
-import networkx as nx
+#import networkx as nx
 import numpy as np
-from scipy.sparse import lil_matrix, csr_matrix
+#from scipy.sparse import lil_matrix, csr_matrix
 import matplotlib.pyplot as plt
 
 # data = lil_matrix((2,2),dtype ='f')
